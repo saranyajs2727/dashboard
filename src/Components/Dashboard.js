@@ -1,9 +1,8 @@
 import { Grid, Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-// import Chart from "./dashboard/Chart";
+
 import Graph from "../Components/Graph";
-// import Header from "./Header";
 
 export default function Home() {
   return (
