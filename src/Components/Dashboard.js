@@ -1,13 +1,17 @@
 import { Grid, Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import { Chart } from "react-chartjs-2";
 
 import Graph from "../Components/Graph";
+import BankingChart from "./BankingChart";
+import Charts from "./Charts";
+import Header from "./Header";
 
 export default function Home() {
   return (
-    <div style={{ display: "flex" }}>
-      {/* <Header /> */}
+    <div style={{ display: "flex",backgroundColor:"#71dee2" }}>
+      <Header />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
         <Grid item xs={12} md={8} lg={11}>
@@ -19,7 +23,8 @@ export default function Home() {
               height: 350,
             }}
           >
-            {/* <Chart /> */}
+            {/* <Charts /> */}
+            <BankingChart />
           </Paper>
         </Grid>
         <br />
