@@ -1,13 +1,17 @@
 import { Grid, Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import { Chart } from "react-chartjs-2";
 
 import Graph from "../Components/Graph";
+import BankingChart from "./BankingChart";
+import Charts from "./Charts";
+import Header from "./Header";
 
 export default function Home() {
   return (
-    <div style={{ display: "flex" }}>
-      {/* <Header /> */}
+    <div style={{ display: "flex",backgroundColor:"#56bdec" }}>
+      <Header />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
         <Grid item xs={12} md={8} lg={11}>
@@ -19,7 +23,8 @@ export default function Home() {
               height: 350,
             }}
           >
-            {/* <Chart /> */}
+            {/* <Charts /> */}
+            <BankingChart />
           </Paper>
         </Grid>
         <br />
@@ -84,6 +89,27 @@ export default function Home() {
               <h3>Bank and Credit Cards</h3>
               <p style={{ textAlign: "center", marginTop: "2rem" }}>
                 Yet to add Bank and Credit Card details <br />{" "}
+                <a style={{ color: "blue" }}> Add Bank Account </a>
+              </p>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <Paper
+              sx={{
+                p: 1,
+                display: "flex",
+                flexDirection: "column",
+                height: 270,
+              }}
+            >
+              <h3>Market Overview
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</h3>
+              <p style={{ textAlign: "center", marginTop: "2rem" }}>
+              $36,2531.00
+USD
+
+(+1.37%) <br />{" "}
                 <a style={{ color: "blue" }}> Add Bank Account </a>
               </p>
             </Paper>
