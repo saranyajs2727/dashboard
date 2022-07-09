@@ -53,18 +53,18 @@ import {
     };
   
     const drawer = (
-      <div style={{ backgroundColor: "blue" ,height:"100%"}}>
+      <div style={{ backgroundColor: "blue" ,height:"100%",color:"white",fontWeight:"bold"}}>
         <Toolbar />
         <Divider />
         <List>
           <ListItem button component={Link} href="/">
-            <ListItemIcon>
+            <ListItemIcon style={{color:"white"}}>
               <Dashboard />
             </ListItemIcon>
             <ListItemText primary="Dashboard" />
           </ListItem>
           <ListItemButton onClick={handleClickItems}>
-            <ListItemIcon>
+            <ListItemIcon style={{color:"white"}}>
               <InboxIcon />
             </ListItemIcon>
             <ListItemText primary="Items" />
@@ -73,7 +73,7 @@ import {
           <Collapse in={openItem} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/items">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <StarBorder />
                 </ListItemIcon>
                 <ListItemText primary="Items" />
@@ -82,7 +82,7 @@ import {
           </Collapse>
         </List>
         <ListItem button component={Link} href="/banking">
-          <ListItemIcon>
+          <ListItemIcon style={{color:"white"}}>
             <Home />
           </ListItemIcon>
           <ListItemText primary="Banking" />
@@ -90,7 +90,7 @@ import {
         <Divider />
         <List>
           <ListItemButton onClick={handleClickSales}>
-            <ListItemIcon>
+            <ListItemIcon style={{color:"white"}}>
               <ShoppingCart />
             </ListItemIcon>
             <ListItemText primary="Sales" />
@@ -99,25 +99,25 @@ import {
           <Collapse in={openSales} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/customer">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <PeopleAlt />
                 </ListItemIcon>
-                <ListItemText primary="Customers" />
+                <ListItemText primary="Customers" style ={{color:"white",fontSize:30}} />
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/estimate">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <Receipt />
                 </ListItemIcon>
                 <ListItemText primary="Estimates" />
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/sales">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <AddShoppingCart />
                 </ListItemIcon>
                 <ListItemText primary="Sale Orders" />
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/invoices">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <ReceiptLong />
                 </ListItemIcon>
                 <ListItemText primary="Invoices" />
@@ -125,7 +125,7 @@ import {
             </List>
           </Collapse>
           <ListItemButton onClick={handleClickPurchases}>
-            <ListItemIcon>
+            <ListItemIcon style={{color:"white"}}>
               <ShoppingBag />
             </ListItemIcon>
             <ListItemText primary="Purchases" />
@@ -134,13 +134,13 @@ import {
           <Collapse in={openPurchases} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/vendor">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <People />
                 </ListItemIcon>
                 <ListItemText primary="Vendors" />
               </ListItemButton>
               <ListItemButton sx={{ pl: 4 }} component={Link} href="/purchase">
-                <ListItemIcon>
+                <ListItemIcon style={{color:"white"}}>
                   <Receipt />
                 </ListItemIcon>
                 <ListItemText primary="Purchase Orders" />
