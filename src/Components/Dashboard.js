@@ -10,7 +10,7 @@ import Header from "./Header";
 
 export default function Home() {
   return (
-    <div style={{ display: "flex",backgroundColor:"#71dee2" }}>
+    <div style={{ display: "flex",backgroundColor:"#56bdec" }}>
       <Header />
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
@@ -89,6 +89,27 @@ export default function Home() {
               <h3>Bank and Credit Cards</h3>
               <p style={{ textAlign: "center", marginTop: "2rem" }}>
                 Yet to add Bank and Credit Card details <br />{" "}
+                <a style={{ color: "blue" }}> Add Bank Account </a>
+              </p>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <Paper
+              sx={{
+                p: 1,
+                display: "flex",
+                flexDirection: "column",
+                height: 270,
+              }}
+            >
+              <h3>Market Overview
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+</h3>
+              <p style={{ textAlign: "center", marginTop: "2rem" }}>
+              $36,2531.00
+USD
+
+(+1.37%) <br />{" "}
                 <a style={{ color: "blue" }}> Add Bank Account </a>
               </p>
             </Paper>
